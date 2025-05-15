@@ -141,7 +141,6 @@ export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -g ""'
 # Custom function to run all update/upgrade commands
 brew-everything() {
   bun upgrade
-  deno upgrade
   fnm install --lts
   rustup upgrade
   brew update -vvv

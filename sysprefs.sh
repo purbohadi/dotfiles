@@ -98,7 +98,7 @@ defaults write com.apple.universalaccess HIDScrollZoomModifierMask -int 262144
 defaults write com.apple.universalaccess closeViewZoomFollowsFocus -bool true
 
 # disable press-and-hold for keys in favor of key repeat
-defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
+defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool true
 
 # set a blazingly fast keyboard repeat rate
 defaults write NSGlobalDomain KeyRepeat -int 1
@@ -200,7 +200,7 @@ defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
 defaults write com.apple.NetworkBrowser BrowseAllInterfaces -bool true
 
 # show the ~/library folder
-chflags nohidden ~/Library && xattr -d com.apple.FinderInfo ~/Library
+# chflags nohidden ~/Library && xattr -d com.apple.FinderInfo ~/Library
 
 # show the /volumes folder
 sudo chflags nohidden /Volumes
@@ -237,7 +237,7 @@ defaults write com.apple.dock showhidden -bool true
 defaults write com.apple.dock show-recents -bool false
 
 # reset launchpad, but keep the desktop wallpaper intact
-find "${HOME}/Library/Application Support/Dock" -name "*-*.db" -maxdepth 1 -delete
+# find "${HOME}/Library/Application Support/Dock" -name "*-*.db" -maxdepth 1 -delete
 
 # privacy: don't send search queries to apple
 defaults write com.apple.Safari UniversalSearchEnabled -bool false
@@ -330,26 +330,26 @@ defaults write com.apple.mail DisableInlineAttachmentViewing -bool true
 defaults write com.apple.mail SpellCheckingBehavior -string "NoSpellCheckingEnabled"
 
 # hide spotlight tray-icon (and subsequent helper)
-sudo chmod 600 /System/Library/CoreServices/Search.bundle/Contents/MacOS/Search
+# sudo chmod 600 /System/Library/CoreServices/Search.bundle/Contents/MacOS/Search
 
 # disable spotlight indexing for any volume that gets mounted and has not yet been indexed before.
 # use `sudo mdutil -i off "/volumes/foo"` to stop indexing any volume.
-sudo defaults write /.Spotlight-V100/VolumeConfiguration Exclusions -array "/Volumes"
+# sudo defaults write /.Spotlight-V100/VolumeConfiguration Exclusions -array "/Volumes"
 
 # only use utf-8 in terminal.app
-defaults write com.apple.terminal StringEncodings -array 4
+# defaults write com.apple.terminal StringEncodings -array 4
 
 # enable secure keyboard entry in terminal.app (https://security.stackexchange.com/a/47786/8918)
-defaults write com.apple.terminal SecureKeyboardEntry -bool true
+# defaults write com.apple.terminal SecureKeyboardEntry -bool true
 
 # disable the annoying line marks
-defaults write com.apple.Terminal ShowLineMarks -int 0
+# defaults write com.apple.Terminal ShowLineMarks -int 0
 
 # prevent time machine from prompting to use new hard drives as backup volume
 defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
 
 # disable local time machine backups
-hash tmutil &>/dev/null && sudo tmutil disablelocal
+# hash tmutil &>/dev/null && sudo tmutil disablelocal
 
 # show the main window when launching activity monitor
 defaults write com.apple.ActivityMonitor OpenMainWindow -bool true
@@ -358,7 +358,7 @@ defaults write com.apple.ActivityMonitor OpenMainWindow -bool true
 defaults write com.apple.ActivityMonitor ShowCategory -int 0
 
 # enable the debug menu in address book
-defaults write com.apple.addressbook ABShowDebugMenu -bool true
+# defaults write com.apple.addressbook ABShowDebugMenu -bool true
 
 # enable dashboard dev mode (allows keeping widgets on the desktop)
 defaults write com.apple.dashboard devmode -bool true

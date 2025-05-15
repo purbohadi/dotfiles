@@ -73,6 +73,8 @@ BREW_CASK_INSTALL_FORMULAS=(
   macs-fan-control
   master-pdf-editor
   mist
+  mkcert
+  neovim
   obs
   orbstack
   paragon-ntfs
@@ -102,28 +104,20 @@ done
 
 # mas list | sort -b -k2
 MAS_IDS=(
-  1569813296 # 1Password for Safari  (8.10.70)
   611658502  # Boxy SVG              (4.66.0)
   1287239339 # ColorSlurp            (3.9.2)
   1447043133 # Cursor Pro            (2.13)
-  411643860  # DaisyDisk             (4.31)
   1503988785 # Entity Pro            (1.6)
   1591510203 # Equinox               (4.0)
-  1032155965 # Foxit PDF Reader      (11.1.2)
-  408981434  # iMovie                (10.4.3)
   1622835804 # Kagi for Safari       (2.2.3)
-  409183694  # Keynote               (14.4)
   1263070803 # Lungo                 (2.7.0)
   920404675  # Monodraw              (1.6.2)
   1464122853 # NextDNS               (1.5.1)
   1592917505 # Noir                  (2025.1.2
-  409203825  # Numbers               (14.4)
-  409201541  # Pages                 (14.4)
   1289583905 # Pixelmator Pro        (3.6.17)
   6738274497 # Raycast Companion     (1.1.0)
   1519867270 # Refined GitHub        (25.2.26)
-  1482490089 # Tampermonkey Classic  (5.3.6218
-  747648890  # Telegram              (11.9)
+  1482490089 # Tampermonkey Classic  (5.3.6218)
   899247664  # TestFlight            (3.8.0)
   425424353  # The Unarchiver        (4.3.9)
   1607635845 # Velja                 (2.1.1)
@@ -136,9 +130,6 @@ done
 echo "Installing Bun ..."
 bash -c "$(curl -fsSL https://bun.sh/install)"
 
-echo "Installing Deno ..."
-bash -c "$(curl -fsSL https://deno.land/x/install/install.sh)"
-
 echo "Installing Rust ..."
 bash -c "$(curl -fsSL https://sh.rustup.rs)"
 
@@ -146,18 +137,11 @@ echo "Installing Node.js runtimes via fnm ..."
 fnm install --lts
 fnm alias lts-latest default
 
-# echo "Installing npm, yarn, and various packages ..."
-# node-update-globals
-
-echo "Installing pip packages ..."
-pip3 install --upgrade pip
-pip3 install neovim watchdog
-
 echo "Setting up git lfs ..."
-sudo git lfs install --system
+brew install git-lfs
 
 echo "Setting up mkcert ..."
-mkcert -install
+brew install mkcert
 
 eval "$(ssh-agent -s)"
 

@@ -16,10 +16,6 @@ zsh -c "$(curl -fsSL https://dotfiles.purbo.co/extra.sh)"
 ```
 
 ```sh
-zsh -c "$(curl -fsSL https://dotfiles.purbo.co/neovim.sh)"
-```
-
-```sh
 zsh -c "$(curl -fsSL https://dotfiles.purbo.co/vscode.sh)"
 ```
 
