@@ -1,5 +1,5 @@
 [commit]
-gpgsign = false
+gpgsign = true
 
 [credential]
 helper = store
@@ -33,8 +33,9 @@ rebase = false
 
 [tag]
 forceSignAnnotated = true
+gpgsign = true
 
 [user]
-name = Griko Nibras
-email = griko@nibras.co
-signingkey = C8D144D7CBD8E183244969E1194CDB6C6785C7B3
+name = Purbohadi Utomo
+email = purbo@purbo.co
+signingkey = 8BE42C5C

@@ -10,7 +10,7 @@
     },
     {
       "source": "/zip",
-      "destination": "https://github.com/grikomsn/dotfiles/archive/refs/heads/main.zip",
+      "destination": "https://github.com/purbohadi/dotfiles/archive/refs/heads/main.zip",
       "permanent": false
     }
   ]

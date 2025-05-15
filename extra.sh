@@ -8,7 +8,7 @@ elif [ "${ARCH_NAME}" = "arm64" ]; then
   BREW_PREFIX="/opt/homebrew"
 fi
 
-DF_HOSTNAME="${DF_HOSTNAME:=dotfiles.nibras.co}"
+DF_HOSTNAME="${DF_HOSTNAME:=dotfiles.purbo.co}"
 
 sudo -v
 while true; do
@@ -153,17 +153,11 @@ echo "Installing pip packages ..."
 pip3 install --upgrade pip
 pip3 install neovim watchdog
 
-# echo "Setting up fzf ..."
-# $BREW_PREFIX/opt/fzf/install
-
 echo "Setting up git lfs ..."
 sudo git lfs install --system
 
 echo "Setting up mkcert ..."
 mkcert -install
-
-# echo "Setting up openjdk ..."
-# sudo ln -sfn $BREW_PREFIX/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk
 
 eval "$(ssh-agent -s)"
 

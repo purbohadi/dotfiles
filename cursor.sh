@@ -8,7 +8,7 @@ while true; do
 done 2>/dev/null &
 
 APP_USER_PATH="$HOME/Library/Application\ Support/Cursor/User"
-DF_HOSTNAME="${DF_HOSTNAME:=dotfiles.nibras.co}"
+DF_HOSTNAME="${DF_HOSTNAME:=dotfiles.purbo.co}"
 
 cd $HOME
 

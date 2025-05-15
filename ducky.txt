@@ -11,7 +11,7 @@ DELAY 1000
 
 DEFAULT_DELAY 50
 
-STRING sh -c "$(curl -fsSL https://dotfiles.nibras.co/sysprefs.sh)"
-STRING && zsh -c "$(curl -fsSL https://dotfiles.nibras.co/core.sh)"
-STRING && zsh -c "$(curl -fsSL https://dotfiles.nibras.co/extra.sh)"
+STRING sh -c "$(curl -fsSL https://dotfiles.purbo.co/sysprefs.sh)"
+STRING && zsh -c "$(curl -fsSL https://dotfiles.purbo.co/core.sh)"
+STRING && zsh -c "$(curl -fsSL https://dotfiles.purbo.co/extra.sh)"
 ENTER

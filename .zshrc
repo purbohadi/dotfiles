@@ -3,7 +3,7 @@
 # https://stackoverflow.com/a/57591830/4273667
 # export GPG_TTY=$(tty)
 
-# Local brew prefix check, see https://dotfiles.griko.id/check-arch.sh
+# Local brew prefix check, see https://dotfiles.purbo.co/check-arch.sh
 ARCH_NAME="$(uname -m)"
 if [ "${ARCH_NAME}" = "x86_64" ]; then
   BREW_PREFIX="/usr/local"
@@ -126,7 +126,7 @@ export DISABLE_OPENCOLLECTIVE=1
 export ADBLOCK=1
 
 # Integration for bun completions
-[ -s "/Users/griko/.bun/_bun" ] && source "/Users/griko/.bun/_bun"
+[ -s "/Users/purbo/.bun/_bun" ] && source "/Users/purbo/.bun/_bun"
 
 # Integration for fly completions
 eval "$(fly completion --shell zsh)"

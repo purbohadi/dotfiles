@@ -25,9 +25,6 @@ export PATH=$DENO_INSTALL/bin:$PATH
 export GOPATH=$HOME/.go
 export PATH=$GOPATH/bin:$PATH
 
-# export OPENJDK_INSTALL=$BREW_PREFIX/opt/openjdk
-# export PATH=$OPENJDK_INSTALL/bin:$PATH
-
 export PNPM_HOME=$HOME/Library/pnpm
 export PATH=$PNPM_HOME:$PATH
 

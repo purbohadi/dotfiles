@@ -1,27 +1,26 @@
 # ~/.dotfiles
 
-Dotfiles for my workstations when I'm having a bad day (read: reinstalling from scratch) 🏖️
-
+Dotfiles for my workstations
 ## Install scripts
 
 ```sh
-sh -c "$(curl -fsSL https://dotfiles.nibras.co/sysprefs.sh)"
+sh -c "$(curl -fsSL https://dotfiles.purbo.co/sysprefs.sh)"
 ```
 
 ```sh
-sh -c "$(curl -fsSL https://dotfiles.nibras.co/core.sh)"
+sh -c "$(curl -fsSL https://dotfiles.purbo.co/core.sh)"
 ```
 
 ```sh
-zsh -c "$(curl -fsSL https://dotfiles.nibras.co/extra.sh)"
+zsh -c "$(curl -fsSL https://dotfiles.purbo.co/extra.sh)"
 ```
 
 ```sh
-zsh -c "$(curl -fsSL https://dotfiles.nibras.co/neovim.sh)"
+zsh -c "$(curl -fsSL https://dotfiles.purbo.co/neovim.sh)"
 ```
 
 ```sh
-zsh -c "$(curl -fsSL https://dotfiles.nibras.co/vscode.sh)"
+zsh -c "$(curl -fsSL https://dotfiles.purbo.co/vscode.sh)"
 ```
 
 ## Extra steps
