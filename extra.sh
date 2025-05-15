@@ -48,10 +48,7 @@ source ~/.zshrc
 BREW_CASK_INSTALL_FORMULAS=(
   1password
   1password-cli
-  airbuddy
   balenaetcher
-  betterdisplay
-  cleanmymac
   cleanshot
   craft
   cursor
@@ -68,25 +65,19 @@ BREW_CASK_INSTALL_FORMULAS=(
   keyboardcleantool
   linear-linear
   logi-options+
-  loopback
-  mac-mouse-fix
   macs-fan-control
   master-pdf-editor
   mist
-  mkcert
   neovim
   obs
   orbstack
   paragon-ntfs
-  parallels
   proxyman
   qflipper
   raycast
-  rode-connect
   slack
   steam
-  tableplus
-  tailscale
+  termius
   vlc
   webtorrent
   whatsapp

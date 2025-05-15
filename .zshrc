@@ -128,9 +128,6 @@ export ADBLOCK=1
 # Integration for bun completions
 [ -s "/Users/purbo/.bun/_bun" ] && source "/Users/purbo/.bun/_bun"
 
-# Integration for fly completions
-eval "$(fly completion --shell zsh)"
-
 # Integration for fnm completions
 eval "$(fnm env --use-on-cd --shell zsh)"
 
