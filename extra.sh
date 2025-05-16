@@ -131,9 +131,6 @@ fnm alias lts-latest default
 echo "Setting up git lfs ..."
 brew install git-lfs
 
-echo "Setting up mkcert ..."
-brew install mkcert
-
 eval "$(ssh-agent -s)"
 
 echo "Done! ✨"
