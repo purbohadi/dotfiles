@@ -82,6 +82,7 @@ BREW_CASK_INSTALL_FORMULAS=(
   webtorrent
   whatsapp
   yaak
+  postman
   zoom
 )
 echo "Installing Homebrew casks ..."
