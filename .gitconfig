@@ -11,7 +11,7 @@ textconv = bun
 
 [gpg]
 program = /opt/homebrew/bin/gpg
-format = openpgp
+format = ssh
 
 [gpg "ssh"]
 program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
@@ -38,4 +38,4 @@ gpgsign = true
 [user]
 name = Purbohadi Utomo
 email = purbo@purbo.co
-signingkey = 8BE42C5C
+signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIE6aEvux8Sea/cU2yEa877daLKFpsMcZXlaIg9dnHYCc

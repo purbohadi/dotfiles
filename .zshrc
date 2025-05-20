@@ -1,7 +1,7 @@
 # https://github.com/ohmyzsh/ohmyzsh/blob/master/templates/zshrc.zsh-template
 
 # https://stackoverflow.com/a/57591830/4273667
-# export GPG_TTY=$(tty)
+export GPG_TTY=$(tty)
 
 # Local brew prefix check, see https://dotfiles.purbo.co/check-arch.sh
 ARCH_NAME="$(uname -m)"
